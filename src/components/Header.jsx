@@ -1,7 +1,38 @@
-import React from 'react'
+import React from 'react';
 
 export const Header = () => {
   return (
-    <div>Header</div>
-  )
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body text-uppercase" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#/Page-top">
+                    <img src="/apple-touch-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" /> 
+                    <span> John Doe</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#/Accueil">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/Realisations">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/Blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/Contact">Me contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+  );
 }
