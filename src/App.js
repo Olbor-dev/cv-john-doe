@@ -1,3 +1,4 @@
+import { Accueil } from "./components/Accueil";
 import { Header } from "./components/Header";
 
 
@@ -5,7 +6,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />        
-      <h1>Mon site</h1>
+      <Accueil />
     </div>
   );
 }
