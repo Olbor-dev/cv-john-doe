@@ -1,10 +1,10 @@
 import React from 'react';
 import github from '../img/github.png';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer class="bg-secondary">
-        <div class="row">
+        <div class="container p-4 text-center row">
             <div class="col">
                 <h5>John Doe</h5>
                 <address>
@@ -37,3 +37,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer;

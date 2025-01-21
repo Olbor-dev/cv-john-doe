@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body text-uppercase" data-bs-theme="dark">
@@ -15,10 +16,10 @@ export const Header = () => {
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#/Accueil">Accueil</a>
+                            <Link class="nav-link" to="/accueil">Accueil</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/Services">Services</a>
+                            <Link class="nav-link" to="/services">Services</Link>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#/Realisations">Réalisations</a>
@@ -36,3 +37,5 @@ export const Header = () => {
     </header>
   );
 }
+
+export default Header;

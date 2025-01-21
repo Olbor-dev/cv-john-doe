@@ -2,7 +2,7 @@ import React from 'react';
 import heroBg from '../img/hero-bg.jpg';
 import johnDoe from '../img/john-doe-about.jpg';
 
-export const Accueil = () => {
+const Accueil = () => {
     /* défilement jusqu'a "A propos" */
     const handleScrollToSection = () => {
         const section = document.getElementById('apropos');
@@ -64,3 +64,5 @@ export const Accueil = () => {
     </main>
   )
 }
+
+export default Accueil;
