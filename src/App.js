@@ -23,6 +23,7 @@ import Header from "./components/Header";
 import Accueil from "./pages/Accueil";
 import Footer from "./components/Footer";
 import Services from "./pages/Services";
+import Realisations from "./pages/Realisations";
 
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
       <Routes>
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/realisations" element={<Realisations />} />
       </Routes>
       <Footer />
     </div>
