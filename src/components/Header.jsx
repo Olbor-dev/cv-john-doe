@@ -28,7 +28,7 @@ const Header = () => {
                             <Link class="nav-link" to="/blog">Blog</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/Contact">Me contacter</a>
+                            <Link class="nav-link" to="/contact">Me contacter</Link>
                         </li>
                     </ul>
                 </div>
