@@ -7,6 +7,21 @@
     padding: 2% 5% 2% 5%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.john-doe-info, .pages, .realisations, .articles {
+    min-width: 250px;
+}
+
+.john-doe-info__title {
+    font-weight: bold;
+}
+
+.john-doe-info__social {
+    margin-block: 10px;
+    display: flex;
+    flex-flow: row;
     justify-content: space-around;
 }
 

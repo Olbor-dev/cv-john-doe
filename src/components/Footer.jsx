@@ -1,27 +1,29 @@
 import React from 'react';
 import github from '../img/github.png';
 import '../css/footer.css';
+import twitter from '../img/twitter.png';
+import insta from '../img/instagram.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
         <div class="footer-block">
-            <div class="address">
-                <h5><strong>John Doe</strong></h5>
+            <div class="john-doe-info">
+                <h5 class="john-doe-info__title">John Doe</h5>
                 <address>
                     40 Rue Laure Diebold<br></br>
                     69009 Lyon, France<br></br>
                     Téléphone : 06 20 30 40 50
                 </address>
-                <div class="d-flex flex-row justify-content-between">
+                <div class="john-doe-info__social">
                     <a href="https://github.com/" target="_blank" rel="noreferrer">
                         <img src={github} width="30px" alt="github" />
                     </a>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer">
-                        <img src={github} width="30px" alt="github" />
+                    <a href="https://x.com/" target="_blank" rel="noreferrer">
+                        <img src={twitter} width="30px" alt="twitter" />
                     </a>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer">
-                        <img src={github} width="30px" alt="github" />
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                        <img src={insta} width="30px" alt="instagram" />
                     </a>
                 </div>
             </div>
