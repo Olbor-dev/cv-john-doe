@@ -7,15 +7,15 @@ import insta from '../img/instagram.png';
 const Footer = () => {
   return (
     <footer className="footer">
-        <div class="footer-block">
-            <div class="john-doe-info">
-                <h5 class="john-doe-info__title">John Doe</h5>
+        <div className="footer-block">
+            <div className="john-doe-info">
+                <h5 className="john-doe-info__title">John Doe</h5>
                 <address>
                     40 Rue Laure Diebold<br></br>
                     69009 Lyon, France<br></br>
                     Téléphone : 06 20 30 40 50
                 </address>
-                <div class="john-doe-info__social">
+                <div className="john-doe-info__social">
                     <a href="https://github.com/" target="_blank" rel="noreferrer">
                         <img src={github} width="30px" alt="github" />
                     </a>
@@ -27,48 +27,48 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div class="pages">
+            <div className="pages">
                 <h5>Liens utiles</h5>
-                <ul class="pages__style__links">
-                    <li class="">
-                        <a class="pages__link" href="/accueil">Accueil</a>
+                <ul className="pages__style__links">
+                    <li className="">
+                        <a className="pages__link" href="/accueil">Accueil</a>
                     </li>
-                    <li class="">
-                        <a class="pages__link" href="/services">Services</a>
+                    <li className="">
+                        <a className="pages__link" href="/services">Services</a>
                     </li>
-                    <li class="">
-                        <a class="pages__link" href="/contact">Me contacter</a>
+                    <li className="">
+                        <a className="pages__link" href="/contact">Me contacter</a>
                     </li>
-                    <li class="">
-                        <a class="pages__link" href="/mentions">Mentions légales</a>
+                    <li className="">
+                        <a className="pages__link" href="/mentions">Mentions légales</a>
                     </li>
                 </ul>
             </div>
-            <div class="realisations">
+            <div className="realisations">
                 <h5>Mes dernières réalisations</h5>
-                <ul class="realisations__style__links">
-                    <li class="">
-                        <a class="realisations__link" href="/realisations">Fresh food</a>
+                <ul className="realisations__style__links">
+                    <li className="">
+                        <a className="realisations__link" href="/realisations">Fresh food</a>
                     </li>
-                    <li class="">
-                        <a class="realisations__link" href="/realisations">Restaurant Akira</a>
+                    <li className="">
+                        <a className="realisations__link" href="/realisations">Restaurant Akira</a>
                     </li>
-                    <li class="">
-                        <a class="realisations__link" href="/realisations">Espace bien-être</a>
+                    <li className="">
+                        <a className="realisations__link" href="/realisations">Espace bien-être</a>
                     </li>
                 </ul>
             </div>
-            <div class="articles">
+            <div className="articles">
             <h5>Mes dernièrs articles</h5>
-                <ul class="articles__style__links">
-                    <li class="">
-                        <a class="articles__link" href="/blog">Coder son site en HTML/CSS</a>
+                <ul className="articles__style__links">
+                    <li className="">
+                        <a className="articles__link" href="/blog">Coder son site en HTML/CSS</a>
                     </li>
-                    <li class="">
-                        <a class="articles__link" href="/blog">Vendre ses produits sur le web</a>
+                    <li className="">
+                        <a className="articles__link" href="/blog">Vendre ses produits sur le web</a>
                     </li>
-                    <li class="">
-                        <a class="articles__link" href="/blog">Se positionner sur Google</a>
+                    <li className="">
+                        <a className="articles__link" href="/blog">Se positionner sur Google</a>
                     </li>
                 </ul>
             </div>

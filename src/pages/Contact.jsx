@@ -5,36 +5,44 @@ import FormContact from '../components/FormContact';
 const Contact = () => {
   return (
     <main>
-        {/*
-        <div class="position-relative">
-            <img src={contact} alt="programmeur de dos" class="img-fluid w-100" style={{ height: '100vh', objectFit: 'cover' }}/>
-            <div class="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 105, 255, 0.5' }}>
-            </div>
-        </div>
-        */}
-
-        <div className="d-flex justify-content-center align-items-center"
+        <div className="py-4"
             style={{
+                position: "relative",
                 backgroundImage: `url(${contact})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '125vh',
-                color: '#000',
+                backgroundRepeat: 'no-repeat',
+                height: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
             }}
         >
-            <div class="col container bg-white">
-                <h1 class="text-center text-uppercase mt-3">Me contacter</h1>
-                <p class="text-center">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
-                <hr class="border border-primary border-3 opacity-75 mx-auto mb-4" width="20%" />
-                <div class="row">
-                    <div class="col ps-5">
-                        <h2 class="mt-3">Formulaire de contact</h2>
-                        <hr class="border border-primary border-2 opacity-75 mx-auto mb-4" />
+        <div
+            style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 105, 255, 0.5)", // Couleur et opacité
+            zIndex: 1, // Superposition sur l'image de fond
+            }}
+        ></div>
+
+            <div className="col container-fluid bg-white p-4" style={{ maxWidth: "1000px", borderRadius: "10px", zIndex: 2}}>
+                <h1 className="text-center text-uppercase mt-3">Me contacter</h1>
+                <p className="text-center">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
+                <hr className="border border-primary border-3 opacity-75 mx-auto mb-4" width="20%" />
+                <div className="row">
+                    <div className="col ps-5">
+                        <h2 className="mt-3">Formulaire de contact</h2>
+                        <hr className="border border-primary border-2 opacity-75 mx-auto mb-4" />
                         <FormContact />
                     </div>
-                    <div class="col pe-5">
-                        <h2 class="mt-3">Mes coordonnées</h2>
-                        <hr class="border border-primary border-2 opacity-75 mx-auto mb-4" />
+                    <div className="col pe-5">
+                        <h2 className="mt-3">Mes coordonnées</h2>
+                        <hr className="border border-primary border-2 opacity-75 mx-auto mb-4" />
                         <address>
                             40 Rue Laurent Diebold, 69009 Lyon, France<br></br>
                             06 20 30 40 50

@@ -128,14 +128,3 @@ function FormContact() {
 }
 
 export default FormContact;
-
-
-/*
-const FormContact = () => {
-  return (
-    <div>FormContact</div>
-  )
-}
-
-export default FormContact
-*/
