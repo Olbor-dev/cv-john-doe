@@ -6,7 +6,7 @@ const Header = () => {
     <header>
         <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body text-uppercase" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand text-white" href="#/Page-top">
+                <a class="navbar-brand text-white" href="/accueil">
                     <img src="/apple-touch-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" /> 
                     <span> John Doe</span>
                 </a>
