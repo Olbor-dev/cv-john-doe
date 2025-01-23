@@ -14,41 +14,20 @@ const Accueil = () => {
   return (
     <main>
         <section className="pb-3">
-            <div className="py-4"
-                style={{
-                    position: "relative",
-                    backgroundImage: `url(${heroBg})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    height: '100vh',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                }}
-            >
-                <div
-                    style={{
-                    position: "absolute",
-                    top: 0,
-                    left: 0,
-                    width: "100%",
-                    height: "100%",
-                    backgroundColor: "rgba(0, 105, 255, 0.5)", // Couleur et opacité
-                    zIndex: 1, // Superposition sur l'image de fond
-                    }}
-                >
+            <div className="position-relative">
+                <img src={heroBg} alt="programmeur de dos" className="img-fluid w-100" style={{ height: '100vh', objectFit: 'cover' }}/>
+                <div className="position-absolute top-0 start-0 w-100 h-100" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3' }}>
                 </div>
-                <div className="position-absolute top-50 start-50 translate-middle text-white text-center" style={{zIndex: 2}}>
-                    <h1 className="p-2">Bonjour, je suis John Doe</h1>
-                    <h2 className="p-2">Développeur web full stack</h2>
-                    <button type="button" className="btn btn-primary" onClick={handleScrollToSection}>En savoir plus</button>
-                </div>
+            </div>
+            <div className="position-absolute top-50 start-50 translate-middle text-white text-center">
+                <h1 className="p-2">Bonjour, je suis John Doe</h1>
+                <h2 className="p-2">Développeur web full stack</h2>
+                <button type="button" className="btn btn-primary" onClick={handleScrollToSection}>En savoir plus</button>
             </div>
         </section>
         <section className="container" id="apropos">
             <div className="shadow p-3 mb-5 bg-body-tertiary row">
-                <div className="col-md-6">
+                <div className="col">
                     <h2>A propos</h2>
                     <hr className="border border-primary border-3 opacity-75" />
                     <p>Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF.
@@ -56,7 +35,7 @@ const Accueil = () => {
                     <p>Basé à Lyon, je suis à la recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de <strong>développeur web full stack</strong>.</p>
                     <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
                 </div>
-                <div className="col-md-6">
+                <div className="col">
                     <img src={johnDoe} alt="Portrait John Doe" className="img-fluid w-100" />
                     <h3 className="mt-3">Mes compétences</h3>
                     <h5 className="mt-3">HTML 5</h5>

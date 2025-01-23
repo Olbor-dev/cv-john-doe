@@ -34,7 +34,7 @@ function FormContact() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container">
         <form onSubmit={handleSubmit}>
         {/* Champ Nom */}
         <div className="mb-3">
