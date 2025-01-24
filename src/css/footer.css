@@ -4,7 +4,7 @@
 }
 
 .footer-block {
-    padding: 2% 5% 2% 5%;
+    padding: 2% 5% 1% 5%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -39,4 +39,15 @@
 
 .pages__link:hover, .realisations__link:hover, .articles__link:hover {
     color: blue;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding-block: 5px;
 }

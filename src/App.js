@@ -34,6 +34,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/" element={<Accueil />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/services" element={<Services />} />
         <Route path="/realisations" element={<Realisations />} />
