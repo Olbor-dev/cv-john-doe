@@ -1,0 +1,53 @@
+.footer {
+    background-color: rgba(68, 68, 68, 0.1);
+    color: black;
+}
+
+.footer-block {
+    padding: 2% 5% 1% 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.john-doe-info, .pages, .realisations, .articles {
+    min-width: 250px;
+}
+
+.john-doe-info__title {
+    font-weight: bold;
+}
+
+.john-doe-info__social {
+    margin-block: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.pages__style__links, .realisations__style__links, .articles__style__links {
+    list-style-type: ">";
+    color: blue;
+    padding-left: 20px;
+}
+
+.pages__link, .realisations__link, .articles__link {
+    margin-left: 5px;
+    color: black;
+    text-decoration-line: none;
+}
+
+.pages__link:hover, .realisations__link:hover, .articles__link:hover {
+    color: blue;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding-block: 5px;
+}

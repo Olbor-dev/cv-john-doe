@@ -1,33 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body text-uppercase" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand text-white" href="#/Page-top">
-                    <img src="/apple-touch-icon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" /> 
+        <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body text-uppercase" data-bs-theme="dark">
+            <div className="container">
+                <a className="navbar-brand text-white" href="/">
+                    <img src="/apple-touch-icon.png" alt="Logo" width="30" height="30" className="d-inline-block align-text-top" /> 
                     <span> John Doe</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#/Accueil">Accueil</a>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/accueil">Accueil</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#/Services">Services</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/services">Services</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#/Realisations">Réalisations</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/realisations">Réalisations</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#/Blog">Blog</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#/Contact">Me contacter</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/contact">Me contacter</Link>
                         </li>
                     </ul>
                 </div>
@@ -36,3 +37,5 @@ export const Header = () => {
     </header>
   );
 }
+
+export default Header;
